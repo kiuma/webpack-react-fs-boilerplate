@@ -1,0 +1,28 @@
+$primary-color: #ffffff;
+
+
+body {
+    background: $primary-color;
+    margin: 0;
+    > header {
+        > h1 { text-align: center; }
+        > * {padding: .25rem 1.25rem;}
+        > nav {
+            background-color: darken($primary-color, 20%);
+            a {
+                text-decoration: none;
+                color: $primary-color;
+
+            }
+            a:hover {
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+}
+
+.component-container {
+    background-color: darken($primary-color, 15%);
+    padding: .25rem 1.25rem;
+    margin: .5rem 0;
+}
