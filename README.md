@@ -16,11 +16,11 @@ so the need for learning extra libraries is limited.
 - _src/app_ contains application assets
 - _src/templates_ contains the sources of html pages.
     These are jsx files that render React components to string.
-    HtmlWebpackPlugin transforms these strings into html files that
+    [HtmlWebpackPlugin](https://github.com/ampedandwired/html-webpack-plugin) transforms these strings into html files that
     are written into build directory keeping directory names and
     structure relative to "templates" dir.
 - _src/dev_ contains the artifacts used by webpack.
-    _src/dev/pagesDefinition.js_ in particular expose the aplication
+    _src/dev/pagesDefinition.js_ in particular exposes the aplication
     page structure: an entry like "it/index" will render the exported
     string of _src/templates/it/index.jsx_ to _build/it/index.html_.
 
